@@ -1,0 +1,10 @@
+Add migrations
+dotnet tool install --global dotnet-ef --version (SDk version with dotnet --info)
+dotnet ef migrations add InitialCreate Data/Migrations (This is the folder location)
+dotnet ef database update
+-- use commad palette to search for sqllite explorer
+dotnet new -h (to add projects)
+dotnet sln to add to solution
+dotnet add reference (path ../)
+dotnet restore to restore projects and nugets
+dotnet build to compile
