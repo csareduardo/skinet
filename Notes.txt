@@ -1,7 +1,9 @@
 Add migrations
 dotnet tool install --global dotnet-ef --version (SDk version with dotnet --info)
-dotnet ef migrations add InitialCreate Data/Migrations (This is the folder location)
+dotnet ef migrations add -p (project) -s API InitialCreate Data/Migrations (This is the folder location)
+dotnet ef migrations remove -p (project) -s API (startup)
 dotnet ef database update
+dotnet rf database drop -p (project) -s API (startup)
 -- use commad palette to search for sqllite explorer
 dotnet new -h (to add projects)
 dotnet sln to add to solution
